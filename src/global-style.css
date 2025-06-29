@@ -1,0 +1,32 @@
+:root{
+    /* Verde */
+    /* --text: #e6ebe6;
+    --background: #032801;
+    --primary: #aacca9;
+    --secondary: #0c8608;
+    --accent: #488545;
+    --banner: #032801; */
+
+    /* Azul */
+    --text: #c7d5e0;
+    --background: #171a21;
+    --primary: #2a475e;
+    --secondary: #1b2838;
+    --accent: #1d6086;
+    --banner: #171a21;  
+
+    /* Vermelho */
+    /* --text: #dfdada;
+    --background: #580007;
+    --primary: #e2969b;
+    --secondary: #89151f;
+    --accent: #b12430;
+    --banner: #580007; */
+    /* --banner: #e63025; */
+    
+    --font: "Roboto", sans-serif;
+    /* --font: "Open Sans", sans-serif; */
+    /* --font: "Montserrat", sans-serif; */
+
+    font-family: var(--font);
+}
