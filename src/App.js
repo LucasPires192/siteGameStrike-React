@@ -5,20 +5,20 @@ import Home from './pages/Home';
 import About from './pages/About';
 import MyGames from './pages/MyGames';
 import Admin from './pages/Admin';
+import Login from './pages/Login';
 
 function App() {
     return (
-        <div>
+        <BrowserRouter>
             <Navbar />
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/Home" element={<Home />} />
-                    <Route path="/About" element={<About />} />
-                    <Route path="/MyGames" element={<MyGames />} />
-                    <Route path="/Admin" element={<Admin />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
+            <Routes>
+                <Route path="/Home" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/MyGames" element={<MyGames />} />
+                <Route path="/Admin" element={<Admin />} />
+                <Route path="/Login" element={<Login />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
