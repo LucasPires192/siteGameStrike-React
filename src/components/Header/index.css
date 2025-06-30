@@ -7,7 +7,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent);
+    background-color: var(--banner);
     transition: height 0.3s;
     padding: 1rem;
 }
