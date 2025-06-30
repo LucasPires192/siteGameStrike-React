@@ -1,4 +1,6 @@
 import './index.css';
+import { NavLink, Link} from "react-router-dom";
+import ico_login from '../../img/ico_login.png';
 
 export default function Navbar() {
     const links = [
@@ -20,14 +22,20 @@ export default function Navbar() {
         }
     ];
     return (
-        <nav>
-            <ul>
+        <nav className="nav-bar">
+            <ul className="nav-menu">
                 {links.map((item, index) => (
-                    <li key={index}>
-                        <a href={item.url}>{item.nome}</a>
-                    </li>
+                    <NavLink
+                        to={item.url}
+                        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                    >
+                        {item.nome}
+                    </NavLink>
                 ))}
             </ul>
+            <div className="login-container">
+                <Link to="/Login"><img className="image-login" src={ico_login} alt="icone de login"/></Link>
+            </div>
         </nav>   
     );
 }
