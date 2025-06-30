@@ -6,7 +6,7 @@ export default function Navbar() {
     const links = [
         {
             nome: 'Página Inicial',
-            url: '/Home'
+            url: '/'
         },
         {
             nome: 'Sobre',
