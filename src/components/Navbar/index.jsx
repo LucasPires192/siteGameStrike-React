@@ -26,10 +26,15 @@ export default function Navbar() {
             <ul className="nav-menu">
                 {links.map((item, index) => (
                     <NavLink
+                        key={index}
+                        className="nav-link"
                         to={item.url}
-                        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
-                    >
-                        {item.nome}
+                    > 
+                        {({ isActive }) => (
+                            <li className={`nav-button ${isActive ? "active" : ""}`}>
+                                {item.nome}
+                            </li>
+                        )}
                     </NavLink>
                 ))}
             </ul>
