@@ -1,6 +1,6 @@
 import './index.css';
 import { NavLink, Link} from "react-router-dom";
-import ico_login from '../../img/ico_login.png';
+import ico_login from 'img/ico_login.png';
 
 export default function Navbar() {
     const links = [

@@ -1,4 +1,4 @@
-import banner from '../../img/banner.png';
+import banner from 'img/banner.png';
 import './index.css';
 
 export default function Header(){
