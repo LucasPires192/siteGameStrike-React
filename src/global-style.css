@@ -16,3 +16,7 @@
     box-sizing: border-box;
     font-family: var(--font);
 }
+
+body{
+    background-image: linear-gradient(var(--background), var(--secondary));
+}
