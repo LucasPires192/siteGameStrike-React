@@ -1,11 +1,11 @@
-import './App.css';
+import 'App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import MyGames from './pages/MyGames';
-import Admin from './pages/Admin';
-import Login from './pages/Login';
+import Navbar from 'components/Navbar';
+import Home from 'pages/Home';
+import About from 'pages/About';
+import MyGames from 'pages/MyGames';
+import Admin from 'pages/Admin';
+import Login from 'pages/Login';
 
 function App() {
     return (
