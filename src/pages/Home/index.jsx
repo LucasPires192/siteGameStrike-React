@@ -1,11 +1,23 @@
-import useJogos from "js/consults.js";
+import useJogos from 'js/consults.js';
+import CardGame from 'components/CardGame';
+import './index.css';
 
 export default function Home(){
     const jogos = useJogos();
     return (
-        <div>
+        <div className="Grid-Games"> 
            {jogos.map(jogo => (
-               <div key={jogo.id}>{jogo.nome} - Nota: {parseFloat(jogo.nota).toFixed(1)}</div>
+               <CardGame 
+                    key={jogo.id}
+                    capa={jogo.capa_jogo}
+                    nome={jogo.nome}
+                    desenvolvedora={jogo.desenvolvedora}
+                    genero={jogo.genero}
+                    data_lancamento={jogo.data_lancamento}
+                    preco={jogo.preco}
+                    faixa_etaria={jogo.faixa_etaria}
+                    nota={jogo.nota}
+                />
            ))}
         </div>
     );
