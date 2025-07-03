@@ -9,7 +9,7 @@ import Login from 'pages/Login';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/siteGameStrike-react">
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
