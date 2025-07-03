@@ -23,15 +23,15 @@
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
-        $jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $allGames = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        if (!$jogos) {
+        if (!$allGames) {
             http_response_code(404);
             echo json_encode(['error' => 'Nenhum jogo encontrado']);
             exit;
         }
 
-        echo json_encode($jogos);
+        echo json_encode($allGames);
 
     } catch (PDOException $e) {
         http_response_code(500);
