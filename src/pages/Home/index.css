@@ -1,6 +1,26 @@
 @import 'global-style.css';
 
-.Grid-Games{
+.grid-top-games{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--accent);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.grid-top-games h1{
+    grid-column: 1 / -1;
+}
+
+.grid-games{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     grid-template-rows: 1fr;

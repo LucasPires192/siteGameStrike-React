@@ -1,14 +1,27 @@
 import { useState, useEffect } from 'react';
 
-export default function useJogos() {
-  const [jogos, setJogos] = useState([]);
+export function useAllGames() {
+  const [allGames, setAllGames] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost/siteGameStrike-react/public/php/games.php')
+    fetch('http://localhost/siteGameStrike-react/public/php/allGames.php')
       .then(res => res.json())
-      .then(data => setJogos(data))
+      .then(data => setAllGames(data))
       .catch(err => console.error('Erro ao buscar jogos:', err));
   }, []);
 
-  return jogos;
+  return allGames;
+}
+
+export function useTopGames() {
+  const [topGames, setTopGames] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost/siteGameStrike-react/public/php/topGames.php')
+      .then(res => res.json())
+      .then(data => setTopGames(data))
+      .catch(err => console.error('Erro ao buscar top jogos:', err));
+  }, []);
+
+  return topGames;
 }
