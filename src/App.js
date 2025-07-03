@@ -9,16 +9,20 @@ import Login from 'pages/Login';
 
 function App() {
     return (
-        <BrowserRouter basename="/siteGameStrike-react">
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/MyGames" element={<MyGames />} />
-                <Route path="/Admin" element={<Admin />} />
-                <Route path="/Login" element={<Login />} />
-            </Routes>
-        </BrowserRouter>
+        <>
+            <BrowserRouter basename="/siteGameStrike-react">
+                <Navbar />
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/About" element={<About />} />
+                        <Route path="/MyGames" element={<MyGames />} />
+                        <Route path="/Admin" element={<Admin />} />
+                        <Route path="/Login" element={<Login />} />
+                    </Routes>
+                </main>
+            </BrowserRouter>
+        </>
     );
 }
 
