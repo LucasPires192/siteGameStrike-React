@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    width: 100%;
+    width: calc(100% - 2rem);
+    margin: auto;
     background-color: var(--secondary);
 }
 
